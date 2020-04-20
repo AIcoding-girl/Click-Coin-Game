@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Clicker Game</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="game-container">
+        <h1>Click Coin Game!</h1>
+
+        <p>Total Coins:
+            <span class='total' value="0">0</span>
+        </p>
+
+        <button class='click-coin'>Click me!</button>
+
+        <p>Upgrades:</p>
+        <div>
+            1x upgrades: <span class="upgrades-one">0</span>, current price: <span class="price-for-one">10</span>
+        </div>
+
+        <div>
+            10x upgrades: <span class="upgrades-ten">0</span>, current price: <span class="price-for-ten">90</span>
+        </div>
+
+        <div>
+            <button id="btn-one" class="buy-one" disabled>Buy 1x upgrade</button>
+            <button id="btn-ten" class="buy-ten" disabled>Buy 10x upgrade</button>
+        </div>
+    </div>
+
+    <div class="rules-container">
+        <h3>Rules:</h3>
+        <ol>
+            <li>You earn one coin per click.</li>
+            <li>When you reach 10 coins, you can buy first upgrade.</li>
+            <li>At the beginning, it costs 10 coins and sets automatic 1 coin per second counter.</li>
+            <li>Each time you buy upgrade, automatic counter goes faster.</li>
+            <li>Each time you buy upgrade, the price goes up by 10 per cent.</li>
+            <li>If you have less than 10 coins, upgrade button is disabled and you can't buy upgrade.</li>
+            <li>Respectively, same rules are for 10x upgrade.</li>
+        </ol>
+        <h3>Enjoy the game!</h3>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
